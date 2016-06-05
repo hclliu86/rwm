@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>横向导航栏</title>
+    <style><!--
+    .nav ul{
+        width:980px; /*设置元素宽度为980px*/
+        border:1px solid #000; /*设置一个颜色为#000， 宽度为1px的变宽*/
+        margin:0px auto 0px auto;
+    }
+    .nav ul li{
+        float:left;
+    }
+    .nav ul li a{
+        width:80px; /*设置元素宽为80px*/
+        height:28px;/*设置高度为28px*/
+        line-height:28px; /*设置行距为28px， 让文字在每行的中间位置*/
+        background:greenyellow;/*设置元素的背景颜色*/
+        color:darkmagenta; /*设置文字颜色*/
+        margin:5px 10px;
+        font-size:12px; /*字体*/
+        display:block; /*将a从联级元素改为块元素，才能让前面设置的宽和高起作用*/
+        text-align:center; /*让文本居中*/
+        text-decoration:none; /*去掉下划线*/
+    }
+    .nav ul li a:hover{ /*当鼠标放在a元素上时，a的样式按照下面的代码执行*/
+        width:78px;
+        height:26px;
+        line-height:28px;
+        border:1px solid red;
+        color:gold;
+        background: #FFF;
+    }
+    --></style>
+</head>
+<body>
+<div class = "nav">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">导航1</a></li>
+        <li><a href="#">导航2</a></li>
+        <li><a href="#">导航3</a></li>
+        <li><a href="#">导航4</a></li>
+    </ul>
+</div>
+</body>
+</html>
