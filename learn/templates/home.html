@@ -5,6 +5,11 @@
 {% block content %}
 {#{% include 'ad.html' %}#}
 
-{{ string_ }}
+    {{ string_ }}
+
+    以下是列表内容：
+    {% for i in TutorialList %}
+    {{ i }}
+    {% endfor %}
 
 {% endblock %}
