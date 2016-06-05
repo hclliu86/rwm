@@ -9,7 +9,10 @@
 
     以下是列表内容：
     {% for i in TutorialList %}
-    {{ i }}
+        {{ i }}
     {% endfor %}
 
+    {% for key, value in waste_info.items %}
+        {{ key }}: {{ value }}
+    {% endfor %}
 {% endblock %}

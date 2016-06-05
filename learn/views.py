@@ -14,4 +14,4 @@ def home(request):
                     '废物',
                     '管理']
     waste_info = {'type': u"固体废物", 'activity': "2E+10 Bq"}
-    return render(request, 'home.html', {'string_': string_, 'TutorialList': TutroialList})
+    return render(request, 'home.html', {'string_': string_, 'TutorialList': TutroialList, 'waste_info': waste_info})
