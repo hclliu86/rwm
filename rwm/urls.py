@@ -19,9 +19,9 @@ from learn import views as learn_views
 from calc import views as calc_views
 
 urlpatterns = [
-    # url(r'^$', learn_views.index),
-    # url(r'^add/', calc_views.add, name='add'),
-    # url(r'^add/(\d+)/(\d+)', calc_views.add2, name='add2'),
     url(r'^$', learn_views.home, name='home'),
+    url(r'^home.html', learn_views.home, name='home'),
+    url(r'^definition_home.html', learn_views.definition_home, name='definition_home'),
+    # url(r'^jiafa/(\d+)/(\d+)/$', learn_views.add, name='add'),
     url(r'^admin/', admin.site.urls),
 ]

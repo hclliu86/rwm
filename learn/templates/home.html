@@ -4,15 +4,50 @@
 
 {% block content %}
 {#{% include 'ad.html' %}#}
+    <hr/>
+    <h1 id="rwm_principle">放射性废物管理原则</h1>
+    <p id="annotation">摘自《放射性废物管理规定》（GB 14500-2002）</p>
+    <p>1. 保护人类健康</p>
+    <p>2. 保护环境</p>
+    <p>3. 保护后代</p>
+    <p>4. 考虑境外影响</p>
+    <p>5. 遵守国家法律和法规</p>
+    <p>6. 放射性废物产生的最少化</p>
+    <p>7. 废物管理各步骤间的相互依赖</p>
+    <p>8. 废物管理设施的安全</p>
+    <hr/>
 
-    {{ string_ }}
+    <h1>下面是全球放废管理交流会的网址和IAEA的放废管理数据库</h1>
+    <li><a href="http://wmsym.org/">wmsym</a></li>
+    <li><a href="http://newmdb.iaea.org/">newmdb</a> </li>
+    <hr/>
 
-    以下是列表内容：
+    <b id="test1">下面是测试List的内容，List来自views.py</b>
+    <p>
     {% for i in TutorialList %}
         {{ i }}
     {% endfor %}
+    </p>
+    <br/>
+    <b>源代码如下：</b>
+    <pre>
+    for i in TutorialList:
+        print(i)
+    </pre>
 
+    <code>
+        Python source code
+    </code><br/>
+
+
+    <b>下面是测试Dict的内容，Dict来自view.py</b>
     {% for key, value in waste_info.items %}
-        {{ key }}: {{ value }}
+        <li>{{ key }}: {{ value }}</li>
     {% endfor %}
+
+    {% for item in List %}
+        {{ item }}{% if not forloop.last %},{% endif %}
+    {% endfor %}
+
+{#    {% url 'add' a b %} = { c }#}
 {% endblock %}

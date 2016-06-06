@@ -14,4 +14,16 @@ def home(request):
                     '废物',
                     '管理']
     waste_info = {'type': u"固体废物", 'activity': "2E+10 Bq"}
-    return render(request, 'home.html', {'string_': string_, 'TutorialList': TutroialList, 'waste_info': waste_info})
+    List = map(str, range(100))
+    return render(request, 'home.html', {'string_': string_, 'TutorialList': TutroialList,
+                                         'waste_info': waste_info,
+                                         'List': List})
+
+
+def add(request, a, b):
+    c = int(a) + int(b)
+    return render(request, 'home.html', {'c': c, 'a': a, 'b': b})
+
+
+def definition_home(request):
+    return render(request, r'definition\definition_home.html')
