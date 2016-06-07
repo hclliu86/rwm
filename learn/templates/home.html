@@ -6,38 +6,42 @@
 {#{% include 'ad.html' %}#}
     <hr/>
     <h1 id="rwm_principle">放射性废物管理原则</h1>
-    <p id="annotation">摘自《放射性废物管理规定》（GB 14500-2002）</p>
-    <p>1. 保护人类健康</p>
-    <p>2. 保护环境</p>
-    <p>3. 保护后代</p>
-    <p>4. 考虑境外影响</p>
-    <p>5. 遵守国家法律和法规</p>
-    <p>6. 放射性废物产生的最少化</p>
-    <p>7. 废物管理各步骤间的相互依赖</p>
-    <p>8. 废物管理设施的安全</p>
+        <p id="annotation">摘自《放射性废物管理规定》（GB 14500-2002）</p>
+        <ol>
+            <li>保护人类健康</li>
+            <li>保护环境</li>
+            <li>保护后代</li>
+            <li>考虑境外影响</li>
+            <li>遵守国家法律和法规</li>
+            <li>放射性废物产生的最少化</li>
+            <li>废物管理各步骤间的相互依赖</li>
+            <li>废物管理设施的安全</li>
+        </ol>
     <hr/>
 
     <h1>下面是全球放废管理交流会的网址和IAEA的放废管理数据库</h1>
-    <li><a href="http://wmsym.org/">wmsym</a></li>
-    <li><a href="http://newmdb.iaea.org/">newmdb</a> </li>
+        <ol>
+            <li><a href="http://wmsym.org/" title="wmsym是全球放射性废物管理研讨会">wmsym</a></li>
+            <li><a href="http://newmdb.iaea.org/" title="newmdb是IAEA制作的全球在线放射性废物管理数据库">newmdb</a> </li>
+        </ol>
     <hr/>
 
     <b id="test1">下面是测试List的内容，List来自views.py</b>
     <p>
-    {% for i in TutorialList %}
-        {{ i }}
-    {% endfor %}
+        {% for i in TutorialList %}
+            {{ i }}
+        {% endfor %}
     </p>
-    <br/>
-    <b>源代码如下：</b>
-    <pre>
-    for i in TutorialList:
-        print(i)
-    </pre>
+        <b>源代码如下：</b>
+            <pre>
+            for i in TutorialList:
+                print(i)
+            </pre>
 
-    <code>
-        Python source code
-    </code><br/>
+        <code>
+            Python source code
+        </code>
+    <br/>
 
 
     <b>下面是测试Dict的内容，Dict来自view.py</b>
