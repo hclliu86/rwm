@@ -1,0 +1,91 @@
+.nav {
+    margin-left: 5px;;
+    margin-right: 5px;
+    height: 250px;
+    border:1px dotted blueviolet;
+    padding: 2px 2px 2px 2px;
+    }
+.nav p.header-logo{
+    height: 40%;
+    width:50%;
+    top: 5px;
+    left: 0;
+}
+.nav p.definition{
+    height: 40%;
+    width:50%;
+    left:5px;
+    font-size: 14px;
+    /*float:left;*/
+}
+.nav ul{
+    box-sizing: border-box;
+    top:0;
+    right: 5px;
+    border: 2px dotted green;
+    float:right;
+    list-style: none;
+    /*width:900px; !*设置元素宽度为980px*!*/
+    }
+.nav ul li{
+    float:left;
+    }
+.nav ul li a{
+    width:80px; /*设置元素宽为80px*/
+    height:28px;/*设置高度为28px*/
+    line-height:28px; /*设置行距为28px， 让文字在每行的中间位置*/
+    background:orange;/*设置元素的背景颜色*/
+    color:darkblue; /*设置文字颜色*/
+    margin:5px 10px;
+    font-size:12px; /*字体*/
+    display:block; /*将a从联级元素改为块元素，才能让前面设置的宽和高起作用*/
+    text-align:center; /*让文本居中*/
+    text-decoration:none; /*去掉下划线*/
+    }
+.nav ul li a:hover { /*当鼠标放在a元素上时，a的样式按照下面的代码执行*/
+    width: 78px;
+    height: 26px;
+    line-height: 28px;
+    border: 1px solid red;
+    color: gold;
+    background: lightcoral;
+    }
+
+/*以下格式参考www.apple.com的导航格式设置*/
+.ac-gn-list{
+    position:absolute;
+    z-index:2;
+    top:48px;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:0;
+    padding:0 48px;
+    height:auto;
+    box-sizing:border-box;
+    overflow:hidden;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    visibility:hidden;
+    -webkit-transition:visibility 0s linear 1s;
+    transition:visibility 0s linear 1s}
+.ac-gn-list :nth-child(2){
+    margin-top:12px}
+.ac-gn-list :nth-child(9){
+    margin-bottom:48px}
+.ac-gn-list{
+    visibility:visible;
+    -webkit-transition-delay:0s;
+    transition-delay:0s}
+.ac-gn-list{
+    bottom:auto;
+    -webkit-animation:ac-gn-list-searchshow 800ms both;
+    animation:ac-gn-list-searchshow 800ms both}
+.ac-gn-list{
+    display:none}
+.ac-gn-list{
+    bottom:auto;
+    -webkit-animation:ac-gn-list-searchshow 800ms reverse both;
+    animation:ac-gn-list-searchshow 800ms reverse both}
+.ac-gn-list:after{
+    display:none}

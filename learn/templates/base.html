@@ -6,23 +6,9 @@
     <link rel="stylesheet" type="text/css" href="/static/css/learn_base.css">
 </head>
 <body>
-    <p>
-        {% include 'nav.html' %}
-        <br/>
-        <br/>
-        <br/>
-        <a href="https://www.baidu.com/s?wd=%E6%94%BE%E5%B0%84%E6%80%A7%
-        E5%BA%9F%E7%89%A9%E7%AE%A1%E7%90%86&rsv_spt=1&rsv_iqid=0xfd291d7
-        c00077a96&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg
-        &rsv_enter=1&rsv_sug3=7&rsv_sug1=5&rsv_sug7=101&rsv_sug2=0&input
-        T=2758&rsv_sug4=3120" target="_blank" name="百度搜索结果">
-        <img src="/static/images/doggie.jpg" width="200" height="200" align="center"/>
-        </a>
-    </p>
-
-{%  block content %}
-<div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容</div>
-{% endblock %}
+    {%  block content %}
+        <div>这里是默认内容，所有继承自这个模板的，如果不覆盖就显示这里的默认内容</div>
+    {% endblock %}
 
 {#{%  include 'bottom,.html' %}#}
 
