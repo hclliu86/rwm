@@ -1,28 +1,23 @@
 .nav {
-    margin-left: 5px;;
+    margin-left: 5px;
     margin-right: 5px;
-    height: 250px;
+    height: 200px;
     border:1px dotted blueviolet;
-    padding: 2px 2px 2px 2px;
+    padding: 5px;
     }
 .nav p.header-logo{
-    height: 40%;
+    height: 55%;
     width:50%;
-    top: 5px;
-    left: 0;
 }
 .nav p.definition{
-    height: 40%;
-    width:50%;
-    left:5px;
+    height: 45%;
+    width: 50%;
     font-size: 14px;
     /*float:left;*/
 }
 .nav ul{
-    box-sizing: border-box;
-    top:0;
-    right: 5px;
-    border: 2px dotted green;
+    top: 10px;;
+    /*border: 2px dotted green;*/
     float:right;
     list-style: none;
     /*width:900px; !*设置元素宽度为980px*!*/
