@@ -1,1 +1,22 @@
-{% extends base %}
+{% extends 'base.html' %}
+{% block content %}
+    <h2>获取所有行</h2>
+        <ol>
+        {% for value in fetch_all_list %}
+        <li>{{ value }}</li>
+        {% endfor %}
+        </ol>
+    <h2>获取所有<b>中文</b>行</h2>
+        <ol>
+        {% for value in fetch_zh %}
+            <li>{{ value }}</li>
+        {% endfor %}
+        </ol>
+    <h2>获取所有<b>英文</b>行</h2>
+        <ol>
+        {% for value in fetch_en %}
+            <li>{{ value }}</li>
+        {% endfor %}
+        </ol>
+{{ saved_name }}
+{% endblock %}

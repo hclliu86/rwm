@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'learn',
+    'calc',
+    'blog',
+    'testdb',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -77,11 +80,30 @@ WSGI_APPLICATION = 'rwm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test',
+        'USER': 'root',
+        'PASSWORD': 'kimdom2767410',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    },
+    "db_sqlite3": {
+      'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    },
+}
+# use multi-database in django
+DATABASE_ROUTERS = ['rwm.database_router.DatabaseAppsRouter']
+DATABASE_APPS_MAPPING = {
+    'testdb': 'db_sqlite3',
 }
 
 
@@ -107,9 +129,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-Hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'PRC'
 
 USE_I18N = True
 

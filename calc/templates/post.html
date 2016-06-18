@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/search-post/" method="post">
+    {% csrf_token %}
+    <input type="text" name="q">
+    <input type="submit" value="Submit">
+</form>
+    <p>{{ tip }} {{ rlt }}</p>
+{% endblock %}
